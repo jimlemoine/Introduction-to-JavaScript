@@ -284,10 +284,16 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(aWord) {
+  let vowelCount = 0;
+  for (let i = 0; i < aWord.length; i++) {
+    if (aWord[i] === 'A' || aWord[i] === 'a' || aWord[i] === 'E' || aWord[i] === 'e' || aWord[i] === 'I' || aWord[i] === 'i' || aWord[i] === 'O' || aWord[i] === 'o' || aWord[i] === 'U' || aWord[i] === 'u') {
+      vowelCount = vowelCount + 1;
+    }
+  }
+  return vowelCount;
 }
-
+console.log(vowelCounter('BanAna'));
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
